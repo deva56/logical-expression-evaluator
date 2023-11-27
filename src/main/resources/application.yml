@@ -1,0 +1,19 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console:
+      enabled: true
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testDatabase
+    username: root
+    password: root
+
+springdoc:
+  api-docs:
+    path: /api/v1/docs/api-docs
+  swagger-ui:
+    path: /api/v1/docs/swagger
